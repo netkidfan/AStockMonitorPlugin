@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- 股票折线图标 -->
+  <rect width="16" height="16" rx="2" fill="#1a1d27"/>
+  <polyline points="1,12 4,9 7,10 10,5 13,7 15,3"
+            fill="none" stroke="#3b82f6" stroke-width="1.5"
+            stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- 上涨箭头 -->
+  <polyline points="12,3 15,3 15,6"
+            fill="none" stroke="#fc6060" stroke-width="1.2"
+            stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
