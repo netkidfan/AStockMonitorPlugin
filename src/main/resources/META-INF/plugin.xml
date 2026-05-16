@@ -1,0 +1,49 @@
+<idea-plugin>
+    <id>com.stockmonitor.idea-plugin</id>
+    <name>A Stock Monitor</name>
+    <vendor email="9164705@qq.com" url="">NichaelFan</vendor>
+    <description>A股均线突破监控插件 兼容 IntelliJ IDEA 2021.2 及以上版本 在 IDEA 左侧边栏实时监控 A 股品种行情</description>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+        <!-- ── 设置页面 ── -->
+        <applicationConfigurable
+            parentId="tools"
+            instance="com.stockmonitor.settings.StockMonitorConfigurable"
+            id="com.stockmonitor.settings.StockMonitorConfigurable"
+            displayName="A Stock Monitor（A股监控）"/>
+
+        <!-- ── 持久化状态 ── -->
+        <applicationService
+            serviceImplementation="com.stockmonitor.settings.StockMonitorSettings"/>
+
+        <!-- ── 后台监控服务 ──
+        <applicationService
+            serviceImplementation="com.stockmonitor.services.MonitorService"/>-->
+
+        <!-- ── 通知组（用于信号弹窗）── -->
+        <notificationGroup
+                id="A Stock Monitor Signals"
+                displayType="BALLOON"
+                key="notification.group.stock.monitor"
+                bundle="messages.StockMonitorBundle"/>
+
+        <!-- ── 侧边栏 Tool Window ── -->
+        <toolWindow
+            id="A Stock Monitor"
+            secondary="false"
+            anchor="left"
+            factoryClass="com.stockmonitor.toolwindow.StockMonitorToolWindowFactory"
+            icon="/icons/stock_monitor.svg"/>
+
+    </extensions>
+
+    <actions>
+        <action id="StockMonitor.StartStop"
+                class="com.stockmonitor.actions.ToggleMonitorAction"
+                text="切换监控状态"
+                description="启动或停止A股均线监控"/>
+    </actions>
+
+</idea-plugin>
