@@ -29,7 +29,7 @@ dependencies {
 
 intellijPlatform {
     pluginConfiguration {
-        name = "Stock Monitor"
+        name = "A Stock Monitor"
         version = "1.0.0"
         description = "A professional plugin for monitoring A-stock moving average breakout signals in real-time via IDEA's left sidebar tool window. Supports IntelliJ IDEA 2021.2 and later versions.".trimIndent()
         changeNotes = "支持 A股多品种 MA60 均线突破/跌破监控".trimIndent()
