@@ -31,7 +31,7 @@ intellijPlatform {
     pluginConfiguration {
         name = "Stock Monitor"
         version = "1.0.0"
-        description = "A股均线突破监控插件".trimIndent()
+        description = "A股均线突破监控插件 兼容 IntelliJ IDEA 2021.2 及以上版本 在 IDEA 左侧边栏实时监控 A 股品种行情".trimIndent()
         changeNotes = "支持 A股多品种 MA60 均线突破/跌破监控".trimIndent()
         ideaVersion {
             sinceBuild = "212"
