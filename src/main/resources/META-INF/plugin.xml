@@ -2,7 +2,8 @@
     <id>com.stockmonitor.idea-plugin</id>
     <name>A Stock Monitor</name>
     <vendor email="9164705@qq.com" url="">NichaelFan</vendor>
-    <description>A股均线突破监控插件 兼容 IntelliJ IDEA 2021.2 及以上版本 在 IDEA 左侧边栏实时监控 A 股品种行情</description>
+    <description>A professional plugin for monitoring A-stock moving average breakout signals in real-time via IDEA's left sidebar tool window.
+        Supports IntelliJ IDEA 2021.2 and later versions.</description>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
