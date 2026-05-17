@@ -2,7 +2,21 @@
     <id>com.stockmonitor.idea-plugin</id>
     <name>A Stock Monitor</name>
     <vendor email="9164705@qq.com" url="">NichaelFan</vendor>
-    <description>"This is a tool for real-time monitoring of A-share stock market movements. Based on a moving average breakout system, it monitors the 60-period moving average on 5-minute, 15-minute, and 30-minute charts. Breakouts (either above or below) can be set to notify users via Idea or DingTalk.这是用于实时监控A股股票行情的工具，根据均线突破体系监控股票5分钟、15分钟、30分钟的60均线，突破或跌破都可以设置通过idea通知或钉钉通知用户。"</description>
+    <description>"This is a tool for real-time monitoring of A-share stock market movements. Based on a moving average breakout system, it monitors the 60-period moving average on 5-minute, 15-minute, and 30-minute charts. Breakouts (either above or below) can be set to notify users via Idea or DingTalk.
+
+        这是用于实时监控A股股票行情的工具，根据均线突破体系监控股票5分钟、15分钟、30分钟的60均线，突破或跌破都可以设置通过idea通知或钉钉通知用户。
+
+        - 支持分时图
+
+        - 支持免费数据通道和设置Tushare收费通道
+
+        - 支持开市/休市提醒
+
+        - 支持价格预警，内部通知或钉钉通知
+
+        - 支持自定义排序
+
+        - 如果您有好的点子或建议，欢迎留言，作者会认真考虑，谢谢！"</description>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
