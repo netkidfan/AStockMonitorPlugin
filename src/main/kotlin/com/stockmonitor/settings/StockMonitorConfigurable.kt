@@ -131,8 +131,8 @@ class StockMonitorConfigurable : Configurable {
             group("高级数据源（可选）") {
                 row {
                     comment(
-                        "<html><b>数据源优先级</b>：东方财富 → 新浪财经 → 腾讯财经（分钟线）<br>" +
-                        "若以上均失败，可配置以下收费平台作为最终备用</html>"
+                        "<b>数据源优先级</b>：东方财富 → 新浪财经 → 腾讯财经（分钟线）<br>" +
+                        "若以上均失败，可配置以下收费平台作为最终备用"
                     )
                 }
                 row("Tushare Pro Token:") {
@@ -142,9 +142,9 @@ class StockMonitorConfigurable : Configurable {
                 }
                 row {
                     comment(
-                        "<html>Tushare Pro 免费注册，基础接口无需付费 · " +
+                        "Tushare Pro 免费注册，基础接口无需付费 · " +
                         "<a href='https://tushare.pro/register'>前往申请 Token</a><br>" +
-                        "填写 Token 后，当所有免费数据源均失败时自动启用 Tushare</html>"
+                        "填写 Token 后，当所有免费数据源均失败时自动启用 Tushare"
                     )
                 }
             }

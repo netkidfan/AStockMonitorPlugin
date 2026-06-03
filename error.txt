@@ -1,0 +1,251 @@
+[0.049s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "com.intellij.util.lang.PathClassLoader"). To use archived non-system classes, this property must not be set
+2026-05-31 16:54:34,846 [   1744]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.project.impl.ProjectStoreFactory: com.intellij.configurationScript.providers.ConfigurationScriptProjectStoreFactory attempts to override com.intellij.configurationStore.PlatformLangProjectStoreFactory, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-05-31 16:54:35,166 [   2064]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.modcommand.ModCommandExecutor: com.jetbrains.rdserver.ui.intentions.RemoteModCommandExecutor attempts to override com.intellij.lang.impl.modcommand.ModCommandExecutorImpl, but the existing implementation is not overriddable (not declared as 'open=true')
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+2026-05-31 16:55:00,648 [  27546]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Default.Dark is deprecated for new UI themes, use Checkbox.Background.Default instead
+2026-05-31 16:55:00,649 [  27547]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Default.Dark is deprecated for new UI themes, use Checkbox.Border.Default instead
+2026-05-31 16:55:00,649 [  27547]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Selected.Dark is deprecated for new UI themes, use Checkbox.Border.Selected instead
+2026-05-31 16:55:00,649 [  27547]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Selected.Dark is deprecated for new UI themes, use Checkbox.Foreground.Selected instead
+2026-05-31 16:55:00,649 [  27547]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Focus.Wide.Dark is deprecated for new UI themes, use Checkbox.Focus.Wide instead
+2026-05-31 16:55:00,650 [  27548]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Default.Dark is not supported and therefore ignored
+2026-05-31 16:55:00,650 [  27548]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Selected.Dark is not supported and therefore ignored
+2026-05-31 16:55:00,650 [  27548]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Disabled.Dark is deprecated for new UI themes, use Checkbox.Background.Disabled instead
+2026-05-31 16:55:00,651 [  27549]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Selected.Dark is deprecated for new UI themes, use Checkbox.Background.Selected instead
+2026-05-31 16:55:00,651 [  27549]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Disabled.Dark is deprecated for new UI themes, use Checkbox.Border.Disabled instead
+2026-05-31 16:55:00,651 [  27549]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Disabled.Dark is deprecated for new UI themes, use Checkbox.Foreground.Disabled instead
+2026-05-31 16:55:26,580 [  53478] SEVERE - #c.i.u.d.UiDslException - Invalid html: tag <html> inserted automatically and shouldn't be used, text: <html><b>??????????</b>????????? ?? ?????? ?? ???????????????<br>????????????????????????????????????</html>
+java.lang.Throwable: Invalid html: tag <html> inserted automatically and shouldn't be used, text: <html><b>??????????</b>????????? ?? ?????? ?? ???????????????<br>????????????????????????????????????</html>
+        at com.intellij.openapi.diagnostic.Logger.error(Logger.java:375)
+        at com.intellij.ui.dsl.UiDslException$Companion.error(UiDslException.kt:23)
+        at com.intellij.ui.dsl.builder.impl.UtilsKt.checkDeniedHtmlTags(utils.kt:262)
+        at com.intellij.ui.dsl.builder.components.DslLabel.updateEditorPaneText(DslLabel.kt:139)
+        at com.intellij.ui.dsl.builder.components.DslLabel.setText(DslLabel.kt:125)
+        at com.intellij.ui.dsl.builder.impl.UtilsKt.createComment(utils.kt:169)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.comment(RowImpl.kt:288)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.comment(RowImpl.kt:75)
+        at com.intellij.ui.dsl.builder.Row.comment$default(Row.kt:262)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent$lambda$0$4$0(StockMonitorConfigurable.kt:133)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:71)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.Panel.row$default(Panel.kt:53)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent$lambda$0$4(StockMonitorConfigurable.kt:132)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.indent(PanelImpl.kt:355)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.indent(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.groupImpl$lambda$0$0(PanelImpl.kt:181)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.panel(RowImpl.kt:211)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.panel(RowImpl.kt:75)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.groupImpl$lambda$0(PanelImpl.kt:178)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:71)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.Panel.row$default(Panel.kt:53)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.groupImpl(PanelImpl.kt:177)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.group(PanelImpl.kt:169)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.group(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.Panel.group$default(Panel.kt:90)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent$lambda$0(StockMonitorConfigurable.kt:131)
+        at com.intellij.ui.dsl.builder.BuilderKt.panel(builder.kt:21)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent(StockMonitorConfigurable.kt:53)
+        at com.intellij.openapi.options.ex.ConfigurableWrapper.createComponent(ConfigurableWrapper.java:220)
+        at com.intellij.ide.ui.search.TraverseUIStarter.processConfigurables(TraverseUIStarter.kt:453)
+        at com.intellij.ide.ui.search.TraverseUIStarter.access$processConfigurables(TraverseUIStarter.kt:75)
+        at com.intellij.ide.ui.search.TraverseUIStarter$doBuildSearchableOptions$2.invokeSuspend$lambda$0(TraverseUIStarter.kt:410)
+        at com.intellij.openapi.application.CoroutinesKt.writeIntentReadAction$lambda$0(coroutines.kt:332)
+        at com.intellij.openapi.application.impl.AppImplKt$rethrowCheckedExceptions$2.invoke(appImpl.kt:126)
+        at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.runWriteIntentReadAction(NestedLocksThreadingSupport.kt:705)
+        at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:1214)
+        at com.intellij.openapi.application.CoroutinesKt.writeIntentReadAction(coroutines.kt:332)
+        at com.intellij.ide.ui.search.TraverseUIStarter$doBuildSearchableOptions$2.invokeSuspend(TraverseUIStarter.kt:405)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+        at com.intellij.openapi.application.impl.DispatchedRunnable.run(DispatchedRunnable.kt:42)
+        at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+        at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+        at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:218)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:337)
+        at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+        at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:747)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+        at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+        at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+        at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+        at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:721)
+        at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:574)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:378)
+        at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1111)
+        at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+        at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1111)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:376)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:416)
+        at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+        at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+        at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+        at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+        at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+        at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2026-05-31 16:55:26,593 [  53491] SEVERE - #c.i.u.d.UiDslException - IntelliJ IDEA 2026.1.2  Build #IU-261.24374.151
+2026-05-31 16:55:26,593 [  53491] SEVERE - #c.i.u.d.UiDslException - JDK: 25.0.2; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-05-31 16:55:26,594 [  53492] SEVERE - #c.i.u.d.UiDslException - OS: Windows 11
+2026-05-31 16:55:26,594 [  53492] SEVERE - #c.i.u.d.UiDslException - Plugin to blame: A Stock Monitor version: 1.0.3
+2026-05-31 16:55:26,595 [  53493] SEVERE - #c.i.u.d.UiDslException - Last Action: 
+2026-05-31 16:55:26,623 [  53521] SEVERE - #c.i.u.d.UiDslException - Invalid html: tag <html> inserted automatically and shouldn't be used, text: <html>Tushare Pro ????????????????踶?? ?? <a href='https://tushare.pro/register'>??????? Token</a><br>??д Token ???????????????????????????? Tushare</html>
+java.lang.Throwable: Invalid html: tag <html> inserted automatically and shouldn't be used, text: <html>Tushare Pro ????????????????踶?? ?? <a href='https://tushare.pro/register'>??????? Token</a><br>??д Token ???????????????????????????? Tushare</html>
+        at com.intellij.openapi.diagnostic.Logger.error(Logger.java:375)
+        at com.intellij.ui.dsl.UiDslException$Companion.error(UiDslException.kt:23)
+        at com.intellij.ui.dsl.builder.impl.UtilsKt.checkDeniedHtmlTags(utils.kt:262)
+        at com.intellij.ui.dsl.builder.components.DslLabel.updateEditorPaneText(DslLabel.kt:139)
+        at com.intellij.ui.dsl.builder.components.DslLabel.setText(DslLabel.kt:125)
+        at com.intellij.ui.dsl.builder.impl.UtilsKt.createComment(utils.kt:169)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.comment(RowImpl.kt:288)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.comment(RowImpl.kt:75)
+        at com.intellij.ui.dsl.builder.Row.comment$default(Row.kt:262)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent$lambda$0$4$2(StockMonitorConfigurable.kt:144)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:71)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.Panel.row$default(Panel.kt:53)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent$lambda$0$4(StockMonitorConfigurable.kt:143)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.indent(PanelImpl.kt:355)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.indent(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.groupImpl$lambda$0$0(PanelImpl.kt:181)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.panel(RowImpl.kt:211)
+        at com.intellij.ui.dsl.builder.impl.RowImpl.panel(RowImpl.kt:75)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.groupImpl$lambda$0(PanelImpl.kt:178)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:71)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.row(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.Panel.row$default(Panel.kt:53)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.groupImpl(PanelImpl.kt:177)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.group(PanelImpl.kt:169)
+        at com.intellij.ui.dsl.builder.impl.PanelImpl.group(PanelImpl.kt:30)
+        at com.intellij.ui.dsl.builder.Panel.group$default(Panel.kt:90)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent$lambda$0(StockMonitorConfigurable.kt:131)
+        at com.intellij.ui.dsl.builder.BuilderKt.panel(builder.kt:21)
+        at com.stockmonitor.settings.StockMonitorConfigurable.createComponent(StockMonitorConfigurable.kt:53)
+        at com.intellij.openapi.options.ex.ConfigurableWrapper.createComponent(ConfigurableWrapper.java:220)
+        at com.intellij.ide.ui.search.TraverseUIStarter.processConfigurables(TraverseUIStarter.kt:453)
+        at com.intellij.ide.ui.search.TraverseUIStarter.access$processConfigurables(TraverseUIStarter.kt:75)
+        at com.intellij.ide.ui.search.TraverseUIStarter$doBuildSearchableOptions$2.invokeSuspend$lambda$0(TraverseUIStarter.kt:410)
+        at com.intellij.openapi.application.CoroutinesKt.writeIntentReadAction$lambda$0(coroutines.kt:332)
+        at com.intellij.openapi.application.impl.AppImplKt$rethrowCheckedExceptions$2.invoke(appImpl.kt:126)
+        at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.runWriteIntentReadAction(NestedLocksThreadingSupport.kt:705)
+        at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:1214)
+        at com.intellij.openapi.application.CoroutinesKt.writeIntentReadAction(coroutines.kt:332)
+        at com.intellij.ide.ui.search.TraverseUIStarter$doBuildSearchableOptions$2.invokeSuspend(TraverseUIStarter.kt:405)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+        at com.intellij.openapi.application.impl.DispatchedRunnable.run(DispatchedRunnable.kt:42)
+        at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+        at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+        at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:218)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:337)
+        at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+        at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:747)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+        at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+        at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+        at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+        at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:721)
+        at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:574)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:378)
+        at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1111)
+        at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+        at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1111)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:376)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:416)
+        at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+        at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+        at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+        at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+        at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+        at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2026-05-31 16:55:26,629 [  53527] SEVERE - #c.i.u.d.UiDslException - IntelliJ IDEA 2026.1.2  Build #IU-261.24374.151
+2026-05-31 16:55:26,629 [  53527] SEVERE - #c.i.u.d.UiDslException - JDK: 25.0.2; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-05-31 16:55:26,629 [  53527] SEVERE - #c.i.u.d.UiDslException - OS: Windows 11
+2026-05-31 16:55:26,630 [  53528] SEVERE - #c.i.u.d.UiDslException - Plugin to blame: A Stock Monitor version: 1.0.3
+2026-05-31 16:55:26,630 [  53528] SEVERE - #c.i.u.d.UiDslException - Last Action: 
+2026-05-31 16:55:44,915 [  71813]   WARN - #c.i.u.j.JBCefApp - JCEF is manually disabled in headless env via 'ide.browser.jcef.headless.enabled=false'
+2026-05-31 16:55:47,323 [  74221]   WARN - #c.i.o.a.ApplicationManager - Cannot execute background write action in 10 seconds. Thread dump is stored in file:///D:/dev/AStockMonitorPlugin/.intellijPlatform/sandbox/StockMonitorPlugin/IU-2026.1.2/log/bg-wa/thread-dump-716005531.txt
+Searchable options index builder failed
+java.nio.file.InvalidPathException: Illegal char <"> at index 0: "C:\Program Files\Java\jdk-17bin
+        at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:186)
+        at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:142)
+        at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:46)
+        at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:95)
+        at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:203)
+        at com.intellij.platform.core.nio.fs.DelegatingFileSystem.getPath(DelegatingFileSystem.java:98)
+        at java.base/java.nio.file.Path.of(Path.java:148)
+        at org.jetbrains.plugins.gradle.service.GradleInstallationManager.getGradleHomeFromPath(GradleInstallationManager.kt:163)
+        at org.jetbrains.plugins.gradle.service.GradleInstallationManager.getAutodetectedGradleHome(GradleInstallationManager.kt:111)
+        at org.jetbrains.plugins.gradle.service.project.open.GradleProjectImportUtil.suggestGradleHome(GradleProjectImportUtil.kt:95)
+        at org.jetbrains.plugins.gradle.service.settings.IdeaGradleDefaultProjectSettingsControl.setCurrentDefaultProjectSettings(IdeaGradleDefaultProjectSettingsControl.kt:140)
+        at org.jetbrains.plugins.gradle.service.settings.IdeaGradleDefaultProjectSettingsControl.<init>(IdeaGradleDefaultProjectSettingsControl.kt:63)
+        at org.jetbrains.plugins.gradle.service.settings.IdeaGradleSystemSettingsControlBuilder.<init>(IdeaGradleSystemSettingsControlBuilder.java:89)
+        at org.jetbrains.plugins.gradle.service.settings.JavaGradleSettingsControlProvider.getSystemSettingsControlBuilder(JavaGradleSettingsControlProvider.java:20)
+        at org.jetbrains.plugins.gradle.service.settings.GradleSystemSettingsControl.<init>(GradleSystemSettingsControl.java:20)
+        at org.jetbrains.plugins.gradle.service.settings.GradleConfigurable.createSystemSettingsControl(GradleConfigurable.java:32)
+        at org.jetbrains.plugins.gradle.service.settings.GradleConfigurable.createSystemSettingsControl(GradleConfigurable.java:15)
+        at com.intellij.openapi.externalSystem.service.settings.AbstractExternalSystemConfigurable.prepareSystemSettings(AbstractExternalSystemConfigurable.java:194)
+        at com.intellij.openapi.externalSystem.service.settings.AbstractExternalSystemConfigurable.createComponent(AbstractExternalSystemConfigurable.java:92)
+        at com.intellij.openapi.options.ex.ConfigurableWrapper.createComponent(ConfigurableWrapper.java:220)
+        at com.intellij.ide.ui.search.TraverseUIStarter.processConfigurables(TraverseUIStarter.kt:453)
+        at com.intellij.ide.ui.search.TraverseUIStarter.access$processConfigurables(TraverseUIStarter.kt:75)
+        at com.intellij.ide.ui.search.TraverseUIStarter$doBuildSearchableOptions$2.invokeSuspend$lambda$0(TraverseUIStarter.kt:410)
+        at com.intellij.openapi.application.CoroutinesKt.writeIntentReadAction$lambda$0(coroutines.kt:332)
+        at com.intellij.openapi.application.impl.AppImplKt$rethrowCheckedExceptions$2.invoke(appImpl.kt:126)
+        at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.runWriteIntentReadAction(NestedLocksThreadingSupport.kt:705)
+        at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:1214)
+        at com.intellij.openapi.application.CoroutinesKt.writeIntentReadAction(coroutines.kt:332)
+        at com.intellij.ide.ui.search.TraverseUIStarter$doBuildSearchableOptions$2.invokeSuspend(TraverseUIStarter.kt:405)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+        at com.intellij.openapi.application.impl.DispatchedRunnable.run(DispatchedRunnable.kt:42)
+        at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+        at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+        at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:218)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:337)
+        at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+        at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:747)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+        at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+        at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+        at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+        at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+        at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:721)
+        at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:574)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:378)
+        at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1111)
+        at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+        at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1111)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:376)
+        at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:416)
+        at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+        at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+        at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+        at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+        at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+        at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+
+> Task :buildSearchableOptions FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':buildSearchableOptions'.
+> Process 'command 'C:\Users\91647\.gradle\caches\9.0.0\transforms\34e57b5d625c7464ef2c1f66115fab81\transformed\idea-2026.1.2-win\jbr\bin\java.exe'' finished with non-zero exit value -1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 32s
