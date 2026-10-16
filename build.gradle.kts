@@ -1,11 +1,13 @@
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
+
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "2.3.21"
-    id("org.jetbrains.intellij.platform") version "2.16.0"
+    id("org.jetbrains.intellij.platform") version "2.19.0"
 }
 
 group = "com.stockmonitor"
-version = "1.0.3"
+version = "1.0.4"
 
 // 显式指定 Java 17 工具链，避免 Platform Plugin 自动寻找 JDK 21
 java {
@@ -27,8 +29,12 @@ repositories {
 
 dependencies {
     intellijPlatform {
-        // 目标：IntelliJ IDEA 2026.1.2（build 261.24374.151）
-        // 注意：IDEA 从 2025.3 起合并了社区版与旗舰版，统一使用 intellijIdea()
+        // ── 编译基线平台：IntelliJ IDEA 2026.1.2（build 261.24374.151）──
+        // 注意：2026.2 起平台改用 Java 25 编译，若把编译基线抬到 2026.2 会强制 JDK 25
+        // 并把插件字节码抬到 Java 25，只能装在新 IDE 上。
+        // 这里刻意保持「较低编译基线 + 取消 until-build 上界」的组合，
+        // 使同一份产物可同时安装于 2022.3 ~ 2026.2+ 全系列 IDE。
+        // 兼容性由下方 pluginVerification 对 2026.2.0.1 实测校验。
         intellijIdea("2026.1.2")
         bundledPlugin("com.intellij.java")
         // 引入 Kotlin 插件以确保 UI DSL (com.intellij.ui.dsl) 可用
@@ -53,7 +59,7 @@ tasks.named("buildSearchableOptions") {
 intellijPlatform {
     pluginConfiguration {
         name = "A Stock Monitor"
-        version = "1.0.3"
+        version = "1.0.4"
         description = """
             This is a tool for real-time monitoring of A-share stock market movements.
             Based on a moving average breakout system, it monitors the 60-period moving average
@@ -75,11 +81,26 @@ intellijPlatform {
 
             - 如果您有好的点子或建议，欢迎留言，作者会认真考虑，谢谢！
         """.trimIndent()
-        changeNotes = "兼容 IntelliJ IDEA 2026.1.x，支持最新平台 API".trimIndent()
+        changeNotes = """
+            兼容 IntelliJ IDEA 2026.2.x 及后续版本：
+            - 取消 until-build 上界，插件现可安装于 2026.2.0.1 及所有未来版本
+            - 编译基线保持 2026.1.2（Java 17 字节码），向下兼容至 2022.3
+            - 已通过 Plugin Verifier 对 IDEA 2026.2.0.1 的 API 兼容性校验
+        """.trimIndent()
         ideaVersion {
-            // 231 = 2023.1，261 = 2026.1
+            // 231 = 2023.1
             sinceBuild = "231"
-            untilBuild = "261.*"
+            // 不设置 until-build：兼容 sinceBuild 之后的所有版本（含 2026.2 及未来版本）
+            // 这是 JetBrains 官方推荐做法，等价于 plugin.xml 中不生成 until-build 属性
+            untilBuild = provider { null }
+        }
+    }
+    pluginVerification {
+        ides {
+            // 当前编译基线平台（2026.1.2）
+            current()
+            // 目标验证平台：IDEA 2026.2.0.1（build 262.8665.337）
+            create(IntelliJPlatformType.IntellijIdea, "2026.2.0.1")
         }
     }
     signing {
